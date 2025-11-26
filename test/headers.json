@@ -1,0 +1,12 @@
+{
+  "content-type": "application/x-www-form-urlencoded",
+  "authorization": "Basic bXktYXBwOm15LWFwcC1zZWNyZXQtMTIz",
+  "content-digest": "sha-512=:Lh6fzO9XALiY46o5xVyN9yZloKZ6pLJV0kz+VirU5b6rQd2ii7vrTt4gxe32HRuLtNYG2Kl7CnGwQjjDxQk4yA===:",
+  "signature-input": "sig1=(\"@method\" \"@target-uri\" \"authorization\" \"content-digest\");created=1764142794;keyid=\"snIZq-_NvzkKV-IdiM348BCz_RKdwmufnrPubsKKyio\";tag=\"fapi-2-request\"",
+  "signature": "sig1=:7F7Pfo5WFFd/l9egmb1xFNnLXTgHGXDXxH7iwFAYwvjX49m7q6pF+gWPQFFFnoXJ5zdzuF/YD3DCJJaOGYNYPg==:",
+  "content-length": "418",
+  "host": "localhost:3000",
+  "connection": "Keep-Alive",
+  "user-agent": "Apache-HttpClient/4.5.14 (Java/17.0.12)",
+  "accept-encoding": "gzip,deflate"
+}

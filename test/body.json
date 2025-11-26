@@ -1,0 +1,12 @@
+{
+  "grant_type": "client_credentials",
+  "requested-token-type": "urn:ietf:params:oauth:token-type:jwt",
+  "principal_id": [
+    "9801000050702",
+    "9801000050702"
+  ],
+  "person_id": "761337610411353650%5E%5E%5E%262.16.756.5.30.1.109.6.5.3.1.1%26ISO",
+  "scope": "user%2F*.*+openid+fhirUser+purpose_of_use%3Durn%3Aoid%3A2.16.756.5.30.1.127.3.10.5%7CAUTO+subject_role%3Durn%3Aoid%3A2.16.756.5.30.1.127.3.10.6%7CTC"
+}
+
+

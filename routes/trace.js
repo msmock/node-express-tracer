@@ -1,13 +1,22 @@
 const express = require('express');
 const router = express.Router();
 
-// TODO view the latest request
+let latestRequest = null;
+
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send(JSON.stringify(latestRequest));
 });
 
-// TODO store latest request
 router.post('/', function(req, res, next) {
+
+    let headers = req.headers;
+    let body = req.body;
+    let data = [headers, body];
+    latestRequest = data;
+
+    let dataStr = JSON.stringify(data);
+    console.log(dataStr);
+
     res.send('respond with a resource');
 });
 
