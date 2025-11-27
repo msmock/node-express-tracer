@@ -36,7 +36,7 @@ router.put('/', function(req, res, next) {
     let dataStr = JSON.stringify(data);
     console.log(dataStr);
 
-    res.send('received post request');
+    res.send('received put request');
 });
 
 module.exports = router;
