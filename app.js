@@ -3,8 +3,6 @@ const express = require('express');
 const path = require('path');
 const logger = require('morgan');
 
-const indexRouter = require('./routes/index');
-
 const app = express();
 
 // view engine setup
@@ -17,12 +15,13 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
+const bodyParser = require('body-parser');
+app.use(bodyParser.json({limit: '35mb'}));
+
 const cookieParser = require('cookie-parser');
 app.use(cookieParser());
 
-const bodyParser = require('body-parser');
-app.use( bodyParser.json() );
-
+const indexRouter = require('./routes/index');
 app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
